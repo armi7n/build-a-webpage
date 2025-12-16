@@ -1,0 +1,16 @@
+json
+./services.json
+"https://api.saya-tech.ir/services"
+
+
+
+ALERT("Message SENT");
+axios.post("https://api.saya-tech.ir/send-message")
+
+<table class="table"></table>
+
+
+js-folder
+jsFolder
+JsFolder
+
