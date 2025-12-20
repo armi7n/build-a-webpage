@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cards of web page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f0f0f0;
+      }
+      .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+      }
+      .card {
+        padding: 0.89rem;
+        width: 400px;
+        background-color: #f0f0f0;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <img src="img/what_is_illustration_example_illustrator.jpg" alt="" />
+        <div class="card-content">
+          <h3>card1</h3>
+          <p>Lorem ipsum dolor sit amet ...</p>
+          <a href="" class="btn">Read More ...</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/what_is_illustration_example_illustrator.jpg" alt="" />
+        <div class="card-content">
+          <h3>card2</h3>
+          <p>Lorem ipsum dolor sit amet ...</p>
+          <a href="" class="btn">Read More ...</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/what_is_illustration_example_illustrator.jpg" alt="" />
+        <div class="card-content">
+          <h3>card3</h3>
+          <p>Lorem ipsum dolor sit amet ...</p>
+          <a href="" class="btn">Read More ...</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

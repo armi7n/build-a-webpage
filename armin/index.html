@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <a class="navbar-brand" href="/"
+          ><img src="digikala-seeklogo.png" alt=""
+        /></a>
+        <div class="navbar"></div>
+        <ul>
+          <li class="nav-item"><a class="nav-link" href="/about">معرفی</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">خدمات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#clients">مشتریان</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">نمونه‌کارها</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">تماس با ما</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="Card" class="Card-product"></section>
+
+    <div class="container">
+      <h2>شرکت دیجی کالا</h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="armin2/img/4-5000x3333.jpg" alt="">
+            <div class="slide-content">
+              <h3>راهکارهای دیجیتال</h3>
+              <p>طراحی سایت و توسعه نرم‌افزارهای مدرن</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="armin2/img/5-5000x3334.jpg" alt="">
+            <div class="slide-content">
+              <h3>تکنولوژی‌های نوین</h3>
+              <p>پیاده‌سازی سیستم‌های هوشمند و سریع</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="armin2/img/7-4728x3168.jpg" alt="">
+            <div class="slide-content">
+              <h3>تجربه کاربری حرفه‌ای</h3>
+              <p>طراحی رابط کاربری مدرن و کاربرپسند</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-about">
+        <h3>درباره ما</h3>
+        <p>شرکتی معتبر در هر زمینه ای</p>
+        <p>شماره تماس : 09121234567</p>
+      </div>
+
+      <div class="footer-services">
+        <h3>خدمات ما</h3>
+        <ul>
+          <li>خدمات هر کجا که باشید</li>
+          <li>قیمت های مناسب برای خرید و فروش</li>
+          <li>مشاوره های مرتبط با خرید مورد نظر شما</li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>مارا در شبکه های اجتماعی دنبال کنید</h3>
+        <div class="social-icons">
+          <a href="#"><img src="logo/facebook.svg" alt="facebook" /></a>
+          <a href="#"><img src="logo/instagram.svg" alt="instagram" /></a>
+          <a href="#"><img src="logo/telegram.svg" alt="telegram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        rtl: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
