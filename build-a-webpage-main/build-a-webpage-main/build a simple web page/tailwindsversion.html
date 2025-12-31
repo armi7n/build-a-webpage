@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          markazi: ['"Markazi Text"', 'serif'],
+        }
+      }
+    }
+  </script>
+
+  <title>Tailwind Version</title>
+</head>
+
+<body class="bg-gray-100 font-markazi">
+
+
+  <header class="sticky top-0 z-50 bg-[#036] border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+      <a href="#" class="text-white text-2xl font-bold">LOGO :D</a>
+
+      <nav id="nav" class="hidden md:block">
+        <ul class="flex gap-6 text-white font-semibold">
+          <li><a class="hover:text-sky-300" href="#">معرفی</a></li>
+          <li><a class="hover:text-sky-300" href="#">خدمات</a></li>
+          <li><a class="hover:text-sky-300" href="#">مشتریان</a></li>
+          <li><a class="hover:text-sky-300" href="#">نمونه‌کارها</a></li>
+          <li><a class="hover:text-sky-300" href="#">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+
+      <button id="menuBtn" class="md:hidden flex flex-col gap-1">
+        <span class="w-7 h-[3px] bg-white"></span>
+        <span class="w-7 h-[3px] bg-white"></span>
+        <span class="w-7 h-[3px] bg-white"></span>
+      </button>
+    </div>
+
+
+    <nav id="mobileNav" class="hidden bg-white md:hidden">
+      <ul class="flex flex-col p-4 gap-4 font-semibold">
+        <li><a href="#">معرفی</a></li>
+        <li><a href="#">خدمات</a></li>
+        <li><a href="#">مشتریان</a></li>
+        <li><a href="#">نمونه‌کارها</a></li>
+        <li><a href="#">تماس با ما</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="max-w-6xl mx-auto px-4 mt-8">
+    <div class="swiper mySwiper rounded-2xl overflow-hidden h-[420px] md:h-[420px] h-[240px]">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide relative">
+          <img src="img/4-5000x3333.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-10 right-10 text-white z-10 max-w-[60%]">
+            <h3 class="text-3xl">راهکارهای دیجیتال</h3>
+            <p>طراحی سایت و توسعه نرم‌افزارهای مدرن</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="img/5-5000x3334.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-10 right-10 text-white z-10 max-w-[60%]">
+            <h3 class="text-3xl">تکنولوژی‌های نوین</h3>
+            <p>پیاده‌سازی سیستم‌های هوشمند</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="img/7-4728x3168.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-10 right-10 text-white z-10 max-w-[60%]">
+            <h3 class="text-3xl">تجربه کاربری حرفه‌ای</h3>
+            <p>طراحی رابط کاربری مدرن</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+  <h2 class="text-4xl text-center mt-16">خدمات طراحی سایت و اپلیکیشن</h2>
+
+  <div class="flex flex-wrap justify-center gap-8 my-16 px-4">
+
+    <div
+      class="w-[360px] bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 hover:scale-105 transition">
+      <img src="img/Gemini_Generated_Image_3w5cmr3w5cmr3w5c.png" class="h-[220px] w-full object-cover">
+      <div class="p-5 text-center">
+        <h3 class="text-2xl">طراحی سایت</h3>
+        <p class="text-gray-600">ساخت سایت با جاوااسکریپت</p>
+        <a class="inline-block mt-4 bg-[#036] text-white px-6 py-2 rounded-lg" href="#">بیشتر بخوانید</a>
+      </div>
+    </div>
+
+    <div
+      class="w-[360px] bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 hover:scale-105 transition">
+      <img src="img/Gemini_Generated_Image_41strr41strr41st.png" class="h-[220px] w-full object-cover">
+      <div class="p-5 text-center">
+        <h3 class="text-2xl">طراحی اپلیکیشن</h3>
+        <p class="text-gray-600">اپلیکیشن از صفر</p>
+        <a class="inline-block mt-4 bg-[#036] text-white px-6 py-2 rounded-lg" href="#">بیشتر بخوانید</a>
+      </div>
+    </div>
+
+    <div
+      class="w-[360px] bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 hover:scale-105 transition">
+      <img src="img/Gemini_Generated_Image_r7aicr7aicr7aicr.png" class="h-[220px] w-full object-cover">
+      <div class="p-5 text-center">
+        <h3 class="text-2xl">خدمات پس از فروش</h3>
+        <p class="text-gray-600">۶ ماه پشتیبانی رایگان</p>
+        <a class="inline-block mt-4 bg-[#036] text-white px-6 py-2 rounded-lg" href="#">بیشتر بخوانید</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer class="bg-gradient-to-br from-[#022b44] to-[#036] text-white rounded-3xl m-5 p-12">
+    <div class="grid md:grid-cols-3 gap-12 text-center md:text-right">
+
+      <div>
+        <h3 class="text-2xl mb-4">درباره ما</h3>
+        <p>شرکتی معتبر</p>
+        <p>09121234567</p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl mb-4">خدمات ما</h3>
+        <ul class="space-y-2">
+          <li>✔ خدمات سراسری</li>
+          <li>✔ قیمت مناسب</li>
+          <li>✔ مشاوره تخصصی</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-2xl mb-4">شبکه‌های اجتماعی</h3>
+        <div class="flex justify-center md:justify-start gap-6 mt-4">
+          <img class="w-10 hover:scale-110 transition" src="logo/facebook.svg">
+          <img class="w-10 hover:scale-110 transition" src="logo/instagram.svg">
+          <img class="w-10 hover:scale-110 transition" src="logo/telegram.svg">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      pagination: { el: ".swiper-pagination" },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    document.getElementById("menuBtn").onclick = () => {
+      document.getElementById("mobileNav").classList.toggle("hidden");
+    };
+  </script>
+
+</body>
+
+</html>
